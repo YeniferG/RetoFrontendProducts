@@ -6,6 +6,8 @@ import { ListProductsComponent } from "./list-products/list-products.component";
 import { HomeRoutingModule } from './home-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { BuyComponent } from './buy/buy/buy.component';
+import { BuyInformationClientFormComponent } from './buy-information-client.form/buy-information-client.form.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -14,12 +16,15 @@ import { BuyComponent } from './buy/buy/buy.component';
     NavbarComponent,
     CarouselComponent,
     ListProductsComponent,
-    BuyComponent
+    BuyComponent,
+    BuyInformationClientFormComponent
   ],
   imports: [
     CommonModule,
     HttpClientModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   exports: [
     NavbarComponent,

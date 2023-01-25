@@ -1,0 +1,75 @@
+<div class="max-w-2xl p-16 mx-auto dark:bg-gray-900">
+  <h1 class="block mb-2 text-lg font-medium text-center dark:text-gray-300">
+    Información del Cliente
+  </h1>
+  <form [formGroup]="formRegisterClient" (ngSubmit)="onSubmit()">
+    <div class="grid gap-6 mb-6 2">
+      <div>
+        <label
+          for="typeDocument"
+          class="block mb-3 text-sm font-medium text-gray-900 dark:text-gray-300"
+        >
+          Tipo de Documento
+        </label>
+        <select
+          name="typeDocument"
+          id="typeDocument"
+          class="bg-gray-51 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          required
+          formControlName="documentType"
+        >
+          <option selected disabled>Seleccione Su lenguaje</option>
+          <option value="CC">Cedula</option>
+          <option value="TI">Tarjeta de identidad</option>
+          <option value="CE">Cedula de Extranjeria</option>
+          <option value="PA">Pasaporte</option>
+        </select>
+      </div>
+
+      <div>
+        <label
+          for="numberDocument"
+          class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+        >
+          Número de Identificación
+        </label>
+        <input
+          type="number"
+          id="numberDocument"
+          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder="Número del ducumento"
+          maxlength="50"
+          formControlName="documentValue"
+          required
+          value="{{ documentNumberClient }}"
+        />
+      </div>
+
+      <div>
+        <label
+          for="nameClient"
+          class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+        >
+          Nombre del Cliente
+        </label>
+        <input
+          type="text"
+          id="nameClient"
+          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder="Nombre Completo"
+          maxlength="50"
+          formControlName="nameClient"
+          required
+          value="{{ nameClient }}"
+        />
+      </div>
+    </div>
+
+    <button
+      type="submit"
+      class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 mx-3 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+    >
+      Finalizar Compra
+    </button>
+  </form>
+</div>
