@@ -55,19 +55,25 @@
                   >
                     Available quantity: {{ product.inventory }} units.
                   </h6>
-                  <input
-                    type="number"
-                    id="tentacles"
-                    name="tentacles"
-                    [min]="product.min"
-                    [max]="product.max"
-                  />
+                  <div>
+                    <span>Cantidad de Productos: </span>
+                    <input
+                      #identificator
+                      type="number"
+                      id="inputQuantity"
+                      class="quantity-input"
+                      name="tentacles"
+                      [defaultValue]="1"
+                      [min]="product.min"
+                      [max]="product.max"
+                    />
+                  </div>
                   <div class="flex flex-col justify-center px-12">
                     <button
                       class="mt-2 capitalize button-shadow gradient-btn"
                       type="button"
                       [id]="product.id"
-                      (click)="startButton($event)"
+                      (click)="startButton($event, identificator.value)"
                     >
                       Buy
                     </button>

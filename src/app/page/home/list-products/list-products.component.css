@@ -6,8 +6,14 @@
    /*   height: 35rem; */
    /* } */
    .container_card{
-    background: #fdb9f3;
+    background: #FFAA7F;
    }
+
+.quantity-input {
+  width: 65px;
+  height: 32px;
+  background-color: transparent;
+}
    
    .line-grad {
        position: relative;
@@ -15,7 +21,7 @@
        width: 100%;
        border: 2px solid transparent;
        border-radius: 10px;
-       background: linear-gradient(#232323, #232323) padding-box, linear-gradient(90deg, #ff3eaf, #6f00d0) border-box;
+       background: linear-gradient(#232323, #232323) padding-box, linear-gradient(90deg, #232323, #6f00d0) border-box;
    }
    
    .elementor-element{

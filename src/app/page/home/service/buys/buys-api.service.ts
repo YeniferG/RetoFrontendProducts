@@ -8,6 +8,7 @@ import { Buy } from '../model-interface/buy';
 })
 export class BuysApiService {
   private	saveBuyURL = "api/buy";
+  private	getBuysURL = "api/buys";
 
   httpOptions = {
 		headers: new HttpHeaders({ "Content-Type": "application/json" }),
@@ -21,6 +22,13 @@ saveBuy(buy: Buy): Observable<any> {
   return this.http.post(url, buy, this.httpOptions).pipe(
     tap((res) => console.log("Successful", res)),
     catchError(this.handleError<any>("saveBuy")),
+  );
+}
+
+getBuys(): Observable<Buy[]> {
+  return this.http.get<Buy[]>(this.getBuysURL, this.httpOptions).pipe(
+    tap((res) => console.log("Successful", res)),
+    catchError(this.handleError<Buy[]>("getBuys", [])),
   );
 }
 

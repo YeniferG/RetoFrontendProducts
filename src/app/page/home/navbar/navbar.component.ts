@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { faker } from '@faker-js/faker';
 import { Router } from '@angular/router';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-navbar',
@@ -32,5 +33,9 @@ export class NavbarComponent {
 
 	startPageFashion(){
 		this.router.navigate(['home/fashion']);
+	}
+
+	startShoppingcart(){
+		this.router.navigate(['home/buy'])
 	}
 }

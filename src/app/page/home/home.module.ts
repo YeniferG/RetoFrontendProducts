@@ -5,6 +5,7 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { ListProductsComponent } from "./list-products/list-products.component";
 import { HomeRoutingModule } from './home-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { BuyComponent } from './buy/buy/buy.component';
 
 
 
@@ -12,7 +13,8 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [
     NavbarComponent,
     CarouselComponent,
-    ListProductsComponent
+    ListProductsComponent,
+    BuyComponent
   ],
   imports: [
     CommonModule,
