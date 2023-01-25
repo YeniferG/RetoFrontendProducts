@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
+import { Buy } from 'src/app/interfaces/model-interface/buy';
+import { BuysApiService } from 'src/app/service/buys/buys-api.service';
+import { ProductsApiService } from 'src/app/service/products/products-api.service';
 import Swal from 'sweetalert2';
-import { BuysApiService } from '../service/buys/buys-api.service';
-import { Buy } from '../service/model-interface/buy';
-import { ProductsApiService } from '../service/products/products-api.service';
 
 @Component({
   selector: 'app-buy-information-client.form',

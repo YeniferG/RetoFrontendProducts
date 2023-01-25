@@ -1,14 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { faker } from '@faker-js/faker';
 import { Router } from '@angular/router';
-import Swal from 'sweetalert2';
 
 @Component({
-  selector: 'app-navbar',
-  templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.css']
+  selector: 'app-navbar-administrador',
+  templateUrl: './navbar-administrador.component.html',
+  styleUrls: ['./navbar-administrador.component.css']
 })
-export class NavbarComponent {
+export class NavbarAdministradorComponent implements OnInit {
+
   showMenu: boolean = false;
 	showOptionsUser: boolean = false;
 
@@ -33,9 +33,5 @@ export class NavbarComponent {
 
 	startPage(){
 		this.router.navigate(['home/roles']);
-	}
-
-	startShoppingcart(){
-		this.router.navigate(['home/buy'])
 	}
 }

@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ICarouselItem } from './icarousel-items.metadata';
-import { Product } from '../service/model-interface/product';
-import { ProductsApiService } from '../service/products/products-api.service';
+import { Product } from '../../../interfaces/model-interface/product';
+import { ProductsApiService } from '../../../service/products/products-api.service';
 import { faker } from "@faker-js/faker";
 @Component({
   selector: 'app-carousel',

@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Product } from '../service/model-interface/product';
+import { Product } from '../../../interfaces/model-interface/product';
 import Swal from 'sweetalert2';
-import { ProductsApiService } from '../service/products/products-api.service';
+import { ProductsApiService } from '../../../service/products/products-api.service';
 import { faker } from '@faker-js/faker';
-import { ProductInfo } from '../service/model-interface/product-info';
+import { ProductInfo } from '../../../interfaces/model-interface/product-info';
 
 @Component({
   selector: 'app-list-products',

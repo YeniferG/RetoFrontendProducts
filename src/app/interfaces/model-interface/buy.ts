@@ -1,4 +1,4 @@
-import { ProductInfo } from '../model-interface/product-info';
+import { ProductInfo } from './product-info';
 export interface Buy {
     id?: string;
     clientTypeDocument: string;

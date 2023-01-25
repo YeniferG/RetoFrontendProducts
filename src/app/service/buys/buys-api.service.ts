@@ -1,7 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { catchError, Observable, of, tap } from 'rxjs';
-import { Buy } from '../model-interface/buy';
+import { Buy } from '../../interfaces/model-interface/buy';
 
 @Injectable({
   providedIn: 'root',

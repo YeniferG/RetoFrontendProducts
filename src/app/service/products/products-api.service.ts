@@ -1,8 +1,8 @@
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { catchError, Observable, of, tap } from 'rxjs';
-import { Product } from '../model-interface/product';
-import { ProductInfo } from '../model-interface/product-info';
+import { Product } from '../../interfaces/model-interface/product';
+import { ProductInfo } from '../../interfaces/model-interface/product-info';
 
 @Injectable({
   providedIn: 'root',

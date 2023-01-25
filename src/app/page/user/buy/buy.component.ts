@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { ProductsApiService } from '../../service/products/products-api.service';
-import { Product } from '../../service/model-interface/product';
-import { BuysApiService } from '../../service/buys/buys-api.service';
-import { Buy } from '../../service/model-interface/buy';
+import { ProductsApiService } from '../../../service/products/products-api.service';
+import { Product } from '../../../interfaces/model-interface/product';
+import { BuysApiService } from '../../../service/buys/buys-api.service';
+import { Buy } from '../../../interfaces/model-interface/buy';
 import Swal from 'sweetalert2';
 
 @Component({
