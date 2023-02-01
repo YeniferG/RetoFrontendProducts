@@ -42,7 +42,12 @@ export class ProductManagementComponent implements OnInit {
     });
   }
 
-  onEdit(){
-    
+  addProduct(){
+    this.router.navigate(['home/addProduct'])
+  }
+
+  onEdit(product: Product){
+    this.productsApiService.productInEdition = product;
+    this.router.navigate(['home/editProduct'])
   }
 }

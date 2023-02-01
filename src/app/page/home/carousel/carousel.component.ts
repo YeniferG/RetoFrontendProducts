@@ -46,7 +46,7 @@ export class CarouselComponent implements OnInit {
     this.productsApiService.getProducts().subscribe((getproducts) => {
       let a: ICarouselItem[] = getproducts.map((product: Product): ICarouselItem => {
         return {
-          id: product.id,
+          id: product.id!,
           title: {
             first: product.name,
             second: product.min+""

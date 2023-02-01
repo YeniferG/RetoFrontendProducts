@@ -1,9 +1,9 @@
 export interface Product {
-  id: string;
+  id?: string;
   name: string;
   inventory: number;
-  enabled: boolean;
+  enabled?: boolean;
   min: number;
   max: number;
-  imageUrl: string;
+  imageUrl?: string;
 }

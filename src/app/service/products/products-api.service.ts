@@ -13,6 +13,7 @@ export class ProductsApiService {
   private PRODUCTS_URL = 'api/product';
 
   listProductInfo: ProductInfo[] = [];
+  productInEdition?: Product;
 
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
